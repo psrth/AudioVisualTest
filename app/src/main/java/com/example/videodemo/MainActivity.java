@@ -13,20 +13,26 @@ import android.widget.VideoView;
 
 public class MainActivity extends AppCompatActivity {
 
+    // creating a new media player object
     MediaPlayer mediaPlayer;
 
+    // method called when play button is tapped
     public void play(View view)
     {
         mediaPlayer.start();
     }
 
+    // method called when pause button is tapped
     public void pause(View view)
     {
         mediaPlayer.pause();
     }
 
+    // method called when restart button is tapped
     public void restart(View view)
     {
+        // media player is reinitialised, then restarted
+        mediaPlayer.pause();
         mediaPlayer = MediaPlayer.create(this, R.raw.peaky);
         mediaPlayer.start();
     }
