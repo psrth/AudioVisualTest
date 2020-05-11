@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
     // creating a new media player object
     MediaPlayer mediaPlayer;
 
-    // method called when play button is tapped
+    // method called when play button is tappedd
     public void play(View view)
     {
         mediaPlayer.start();
