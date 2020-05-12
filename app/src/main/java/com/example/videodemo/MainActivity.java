@@ -141,7 +141,9 @@ public class MainActivity extends AppCompatActivity {
                 // sets scrub to current position of media player
                 scrubControl.setProgress(mediaPlayer.getCurrentPosition());
             }
-        },0,300);
+        },0,1500);
+
+        // you can use a shorter time period if you have a better RAM but none of my devices are that cool sigh
 
 
 
